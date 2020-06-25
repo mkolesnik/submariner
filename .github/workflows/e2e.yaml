@@ -26,6 +26,8 @@ jobs:
     steps:
       - name: Checkout the repository
         uses: actions/checkout@master
+        with:
+          fetch-depth: 0
 
       - name: Install WireGuard module (On WireGuard tests)
         if: matrix.cable_driver == 'wireguard'
