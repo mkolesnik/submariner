@@ -69,7 +69,7 @@ type EndpointList struct {
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 // +kubebuilder:printcolumn:JSONPath=".status.haStatus",name="HA Status",description="High availability status of the Gateway",type="string"
 
-type Gateway struct {
+type Gateway2 struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 	Status            GatewayStatus `json:"status"`
@@ -98,7 +98,7 @@ type LatencyRTTSpec struct {
 type GatewayList struct {
 	metav1.TypeMeta `json:",inline"`
 	metav1.ListMeta `json:"metadata"`
-	Items           []Gateway `json:"items"`
+	Items           []Gateway2 `json:"items"`
 }
 
 type HAStatus string

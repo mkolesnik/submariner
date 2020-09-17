@@ -4,7 +4,7 @@ import (
 	subv1 "github.com/submariner-io/submariner/pkg/apis/submariner.io/v1"
 )
 
-type SubmarinerCluster struct {
+type Submariner2Cluster struct {
 	ID   string            `json:"id"`
 	Spec subv1.ClusterSpec `json:"spec"`
 }
