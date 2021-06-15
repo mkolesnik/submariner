@@ -2,7 +2,7 @@ restart ?= all
 FOCUS ?=
 SKIP ?=
 PLUGIN ?=
-BASE_BRANCH ?= devel
+BASE_BRANCH ?= release-0.2
 PROTOC_VERSION=3.15.5
 export BASE_BRANCH
 
